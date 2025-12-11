@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="js/main.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+		<!-- <base href="images/" /> -->
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__sticky-container">
+				<div class="container">
+					<div class="header__top">
+						<div class="header__logo">
+							<a href="#" class="header__logo-btn">
+								<img src="images/img/logo.svg" alt="logo" />
+							</a>
+						</div>
+						<nav class="header__nav">
+							<ul class="header__list">
+								<li class="header__item">
+									<a href="#about" class="header__link">About</a>
+								</li>
+								<li class="header__item">
+									<a href="#services" class="header__link">Services</a>
+								</li>
+								<li class="header__item">
+									<a href="#works" class="header__link">Our Work</a>
+								</li>
+							</ul>
+						</nav>
+
+						<button class="header__hamburger">
+							<span class="header__hamburger-line"></span>
+							<span class="header__hamburger-line"></span>
+							<span class="header__hamburger-line"></span>
+						</button>
+
+						<div class="header__contacts">
+							<a href="" class="header__contacts-btn button btn-line">CONTACT US</a>
+						</div>
+					</div>
+					<div class="header__bottom">
+						<div class="header__title">Make your home an ode to joy</div>
+						<div class="header__subtitle">
+							We turn your empty house to a lovely home, making the compact spaces with sapce saving
+							furnitures. Making the unique tastes of yours into reality!
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="banner">
+			<button class="banner__button-circle" type="button" aria-label="Get in touch">
+				<svg width="150" height="150" viewBox="0 0 150 150" class="rotating-text">
+					<!-- Определяем круговой путь для текста -->
+					<defs>
+						<path
+							id="circlePath"
+							d="M 75, 75
+				   m -60, 0
+				   a 60,60 0 1,1 120,0
+				   a 60,60 0 1,1 -120,0"
+						/>
+					</defs>
+
+					<!-- Текст по кругу -->
+					<text fill="white" font-size="14" font-family="Arial, sans-serif">
+						<textPath href="#circlePath" startOffset="0%">• Get in touch • Get in touch</textPath>
+					</text>
+				</svg>
+
+				<!-- Стрелка в центре -->
+				<svg
+					class="arrow-icon"
+					width="32"
+					height="32"
+					viewBox="0 0 32 32"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M22.6663 9.33337L9.33301 22.6667"
+						stroke="white"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M10.667 9.33337H22.667V21.3334"
+						stroke="white"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</button>
+			<img src="images/img/banner.webp" alt="banner" class="banner__img" />
+			<div class="banner__bottom">
+				<div class="container">
+					<div class="banner__card">
+						<div class="banner__card-header">
+							<h2 class="banner__card-title title-line">Awards</h2>
+							<div class="banner__card-divider"></div>
+						</div>
+						<ul class="banner__card-items">
+							<li class="banner__card-item">
+								<div class="banner__card-icons">
+									<img src="images/img/banner_img/banner-1.webp" alt="" />
+								</div>
+								<div class="banner__card-text">
+									German Design Award
+									<br />
+									2021
+								</div>
+							</li>
+							<li class="banner__card-item">
+								<div class="banner__card-icons">
+									<img src="images/img/banner_img/banner-2.webp" alt="" />
+								</div>
+								<div class="banner__card-text">
+									Gold A’ Design Award
+									<br />
+									2021
+								</div>
+							</li>
+							<li class="banner__card-item">
+								<div class="banner__card-icons">
+									<img src="images/img/banner_img/banner-3.webp" alt="" />
+								</div>
+								<div class="banner__card-text">
+									IF Design Award
+									<br />
+									2020
+								</div>
+							</li>
+							<li class="banner__card-item">
+								<div class="banner__card-icons">
+									<img src="images/img/banner_img/banner-4.webp" alt="" />
+								</div>
+								<div class="banner__card-text">
+									Good Design Award
+									<br />
+									2019
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="about__group">
+					<div class="about__content">
+						<h2 class="about__title title-line-1">About Us</h2>
+						<div class="about__subtitle subtitle">
+							We help to bring your
+							<span>dream home</span>
+							to reality
+						</div>
+						<p class="about__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet
+							faucibus nam. Erat id laoreet posuere etiam morbi.
+						</p>
+						<p class="about__text">
+							Tempor dolor elementum tellus non ipsum faucibus. Justo, magna mauris posuere auctor
+							justo. Habitant proin aliquet volutpat leo ultricies. Dui blandit eget vitae turpis
+							ultrices aliquet nunc. Faucibus sit odio bibendum lobortis diam.
+						</p>
+					</div>
+					<div class="about__gallery">
+						<div class="about__gallery-item-left about__gallery-item--large">
+							<img src="images/img/about-1.webp" alt="about img" width="280" height="480" />
+							<div class="about__rotating-badge">
+								<svg width="100" height="100" viewBox="0 0 100 100" class="rotating-text-badge">
+									<defs>
+										<path
+											id="badgeCircle"
+											d="M 50, 50
+					   m -35, 0
+					   a 35,35 0 1,1 70,0
+					   a 35,35 0 1,1 -70,0"
+										/>
+									</defs>
+									<text
+										fill="currentColor"
+										font-size="11"
+										font-family="var(--font-family)"
+										font-weight="500"
+									>
+										<textPath href="#badgeCircle" startOffset="0%">
+											design studio award winning
+										</textPath>
+									</text>
+								</svg>
+								<img
+									src="images/icons/star.webp"
+									alt=""
+									class="badge-icon"
+									width="24"
+									height="26"
+								/>
+							</div>
+						</div>
+						<div class="about__gallery-item-right about__gallery-item--small">
+							<img src="images/img/about-2.webp" alt="about img" width="280" height="480" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="statistics">
+			<div class="container">
+				<div class="statistics__box">
+					<div class="statistics__item">
+						<div class="statistics__item-number">100%</div>
+						<div class="statistics__item-text">SATISFITATION CLIENTS</div>
+					</div>
+					<div class="statistics__item">
+						<div class="statistics__item-number">250</div>
+						<div class="statistics__item-text">EMPLOYEES ON WORLDWIDE</div>
+					</div>
+					<div class="statistics__item">
+						<div class="statistics__item-number">3469</div>
+						<div class="statistics__item-text">PROJECTS COMPLETED ON 60 COUNTRIES</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="services" id="services">
+			<div class="container">
+				<h2 class="services__title title-line-1">OUR SERVICES</h2>
+				<div class="services__subtitle subtitle">
+					We provide the
+					<span>best solutions</span>
+					for your dream home
+				</div>
+				<div class="service__list">
+					<div class="services__item">
+						<img src="images/icons/icons-ser-1.svg" alt="icon" class="services__item-icon" />
+						<div class="services__item-content">
+							<h3 class="services__item-title">Architectural & Interior design</h3>
+							<p class="services__item-text">
+								Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie
+								volutpat ipsum, ultricies.
+							</p>
+						</div>
+					</div>
+					<div class="services__item">
+						<img src="images/icons/icons-ser-2.svg" alt="icon" class="services__item-icon" />
+						<div class="services__item-content">
+							<h3 class="services__item-title">Building Renovation</h3>
+							<p class="services__item-text">
+								Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie
+								volutpat ipsum, ultricies.
+							</p>
+						</div>
+					</div>
+					<div class="services__item">
+						<img src="images/icons/icons-ser-3.svg" alt="icon" class="services__item-icon" />
+						<div class="services__item-content" o>
+							<h3 class="services__item-title">Construciton Management</h3>
+							<p class="services__item-text">
+								Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie
+								volutpat ipsum, ultricies.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="works" id="works">
+			<div class="container">
+				<div class="works__grid">
+					<div class="works__item works__item-big">
+						<h2 class="works__item title-line-1">RECENT WORKS</h2>
+						<div class="works__subtitle subtitle">
+							Some
+							<span>of our crafts</span>
+							made with love
+						</div>
+						<div class="works__images mb-96">
+							<img
+								src="images/img/works-1.webp"
+								width="592"
+								height="444"
+								alt=""
+								class="works-img"
+							/>
+							<div class="works__images-title">Villa Furnishing & Interior</div>
+							<div class="works__images-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet
+								faucibus nam. Erat id laoreet posuere etiam morbi.
+							</div>
+						</div>
+						<button class="works__button button btn-line" type="button">CONTACT US</button>
+					</div>
+					<div class="works__item">
+						<div class="works__images">
+							<img
+								src="images/img/works-2.webp"
+								width="480"
+								height="360"
+								alt=""
+								class="works-img mb-16"
+							/>
+							<div class="works__images-title">Luxury Hotel Renovation</div>
+							<div class="works__images-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet
+								faucibus nam.
+							</div>
+						</div>
+					</div>
+					<div class="works__item">
+						<div class="works__images">
+							<img
+								src="images/img/works-3.webp"
+								width="480"
+								height="360"
+								alt=""
+								class="works-img mb-16"
+							/>
+							<div class="works__images-title">Residence Swimming Pool</div>
+							<div class="works__images-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet
+								faucibus nam.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__content">
+						<div class="footer__content-title subtitle">Kick-start your dream home with us</div>
+						<div class="footer__content-subtitle">Send us a hi</div>
+					</div>
+					<div class="footer__info">
+						<div class="footer__item">
+							<div class="footer__info-title">Brooklyn, New York</div>
+							<div class="footer__info-text">
+								962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United State.
+							</div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__info-text">Email us at</div>
+							<a href="mailto:hello@landify.design" class="footer__link">hello@landify.design</a>
+						</div>
+						<div class="footer__item">
+							<div class="footer__info-text">If you're hurry, quick call for us</div>
+							<a href="tel:+86631250859" class="footer__link">+8(663)125-08-59</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__line"></div>
+				<div class="footer__bottom">
+					<div class="footer__bottom-copyright">
+						<p>
+							© 2022 Inteo - Award winning studio. Made with love by
+							<span>Landify</span>
+						</p>
+					</div>
+					<div class="footer__bottom-social">
+						<div class="footer__bottom-title bottom-line">CONNECT</div>
+						<div class="footer__social-links">
+							<a href="#" class="footer__social-link">
+								<img src="images/icons/icon-instagram.svg" alt="instagram" />
+							</a>
+							<a href="#" class="footer__social-link">
+								<img src="images/icons/icon-facebook.svg" alt="facebook" />
+							</a>
+							<a href="#" class="footer__social-link">
+								<img src="images/icons/icon-youtube.svg" alt="youtube" />
+							</a>
+							<a href="#" class="footer__social-link">
+								<img src="images/icons/icon-twitter.svg" alt="twitter" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="overlay"></div>
+	</body>
+</html>

@@ -1,0 +1,611 @@
+/*!
+ * Объединённый CSS Reset + Normalize
+ * Объединено агентом MiniMax
+ * Дата: 2025-11-29
+ */
+
+/* ==========================================================================
+   										CSS RESET 
+   ========================================================================== */
+
+/* Сбрасываем margin, padding, border и другие свойства у всех основных HTML-элементов */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* Универсальное поведение box-sizing: ширина и высота включают padding и border */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Убираем подсветку при нажатии на iOS (tap highlight) */
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Базовые настройки HTML */
+html {
+	-webkit-text-size-adjust: 100%;
+	/* Запрещает масштабирование текста в мобильном Safari */
+	font-size: 16px;
+	/* Базовый размер шрифта */
+	line-height: 1.5;
+	/* Межстрочный интервал по умолчанию */
+}
+
+/* Стили для body */
+body {
+	margin: 0;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	color: #000;
+	background: #fff;
+}
+
+/* Принудительно задаём блочный тип для семантических HTML5-элементов (для старых браузеров) */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+/* Убираем маркеры у списков внутри навигации */
+nav ul {
+	list-style: none;
+}
+
+/* Отключаем кавычки у цитат */
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+/* Сбрасываем стили у ссылок */
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* Стили для вставленного текста (<ins>) — измените цвета под свои нужды */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+/* Стили для выделенного текста (<mark>) — измените цвета под свои нужды */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Зачёркнутый текст */
+del {
+	text-decoration: line-through;
+}
+
+/* Пунктирное подчёркивание и курсор-помощник для аббревиатур и определений с title */
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+/* Убираем отступы между ячейками таблицы */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Горизонтальная линия (<hr>) — настройте цвет под себя */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/* Выравнивание по вертикали для полей ввода и выпадающих списков */
+input,
+select {
+	vertical-align: middle;
+}
+
+/* Указатель курсора для кнопок */
+button {
+	cursor: pointer;
+}
+
+/* Стили для placeholder-текста */
+::placeholder {
+	color: inherit;
+	opacity: 0.6;
+}
+
+/* Убираем стрелки у числовых полей ввода */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* ==========================================================================
+   NORMALIZE.CSS v8.0.1 | Лицензия MIT | github.com/necolas/normalize.css
+   ========================================================================== */
+
+/* Документ
+   ========================================================================== */
+
+/**
+ * 1. Исправляет межстрочный интервал во всех браузерах.
+ * 2. Запрещает автоматическое изменение размера шрифта после поворота экрана в iOS.
+ */
+
+html {
+	line-height: 1.15;
+	/* 1 */
+	-webkit-text-size-adjust: 100%;
+	/* 2 */
+}
+
+/* Секции
+   ========================================================================== */
+
+/**
+ * Убирает отступы у body во всех браузерах.
+ */
+
+body {
+	margin: 0;
+}
+
+/**
+ * Обеспечивает корректное отображение элемента <main> в Internet Explorer.
+ */
+
+main {
+	display: block;
+}
+
+/**
+ * Исправляет размер шрифта и отступы у заголовков <h1> внутри <section> и <article>
+ * в Chrome, Firefox и Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Группировка контента
+   ========================================================================== */
+
+/**
+ * 1. Устанавливает правильную модель box-sizing в Firefox.
+ * 2. Показывает содержимое, выходящее за границы, в Edge и IE.
+ */
+
+hr {
+	box-sizing: content-box;
+	/* 1 */
+	height: 0;
+	/* 1 */
+	overflow: visible;
+	/* 2 */
+}
+
+/**
+ * 1. Исправляет наследование и масштабирование размера шрифта во всех браузерах.
+ * 2. Исправляет необычное масштабирование шрифта в единицах em.
+ */
+
+pre {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/* Семантика текста
+   ========================================================================== */
+
+/**
+ * Убирает серый фон у активных ссылок в IE 10.
+ */
+
+a {
+	background-color: transparent;
+}
+
+/**
+ * 1. Убирает нижнюю границу у аббревиатур в Chrome 57 и ниже.
+ * 2. Добавляет корректное текстовое оформление в Chrome, Edge, IE, Opera и Safari.
+ */
+
+abbr[title] {
+	border-bottom: none;
+	/* 1 */
+	text-decoration: underline;
+	/* 2 */
+	text-decoration: underline dotted;
+	/* 2 */
+}
+
+/**
+ * Устанавливает более жирное начертание для <b> и <strong> в Chrome, Edge и Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Исправляет наследование и масштабирование размера шрифта во всех браузерах.
+ * 2. Исправляет нестандартное масштабирование в единицах em.
+ */
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/**
+ * Устанавливает корректный меньший размер шрифта для <small> во всех браузерах.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Предотвращает влияние элементов <sub> и <sup> на межстрочный интервал.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Встроенный контент
+   ========================================================================== */
+
+/**
+ * Убирает рамку у изображений, помещённых внутрь ссылок, в IE 10.
+ */
+
+img {
+	border-style: none;
+}
+
+/* Формы
+   ========================================================================== */
+
+/**
+ * 1. Унифицирует шрифты во всех браузерах.
+ * 2. Убирает отступы в Firefox и Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+}
+
+/**
+ * Показывает переполнение в IE.
+ * 1. Показывает переполнение в Edge.
+ */
+
+button,
+input {
+	overflow: visible;
+}
+
+/**
+ * Отменяет наследование text-transform в Edge, Firefox и IE.
+ * 1. Отменяет наследование в Firefox.
+ */
+
+button,
+select {
+	text-transform: none;
+}
+
+/**
+ * Исправляет невозможность стилизовать кликабельные элементы в iOS и Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Убирает внутреннюю рамку и отступы у кнопок в Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Восстанавливает стили фокуса, сброшенные предыдущим правилом.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Исправляет отступы внутри <fieldset> в Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Исправляет перенос текста в Edge и IE.
+ * 2. Исправляет наследование цвета от <fieldset> в IE.
+ * 3. Убирает внутренние отступы, чтобы разработчики не попадали в ловушку,
+ *    когда сбрасывают стили <fieldset> до нуля.
+ */
+
+legend {
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+/**
+ * Исправляет вертикальное выравнивание элемента <progress> в Chrome, Firefox и Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Убирает вертикальный скроллбар по умолчанию в IE 10+ у <textarea>.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Корректная модель box-sizing в IE 10.
+ * 2. Убирает внутренние отступы в IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+
+/**
+ * Исправляет курсор на кнопках увеличения/уменьшения в числовых полях в Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Исправляет странный внешний вид поля поиска в Chrome и Safari.
+ * 2. Исправляет смещение outline в Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
+}
+
+/**
+ * Убирает внутренние отступы у кнопки очистки поиска в Chrome и Safari на macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Исправляет невозможность стилизовать кнопку загрузки файла в iOS и Safari.
+ * 2. Наследует шрифт от родителя в Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+/* Интерактивные элементы
+   ========================================================================== */
+
+/*
+ * Корректное отображение <details> в Edge, IE 10+ и Firefox.
+ */
+
+details {
+	display: block;
+}
+
+/*
+ * Корректное отображение <summary> во всех браузерах.
+ */
+
+summary {
+	display: list-item;
+}
+
+/* Разное
+   ========================================================================== */
+
+/**
+ * Корректное отображение <template> в IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+/**
+ * Корректное скрытие элементов с атрибутом [hidden] в IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
