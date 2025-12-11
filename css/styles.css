@@ -912,6 +912,9 @@ img {
 	.works__images-text {
 		font-size: 14px;
 	}
+	.works{
+		padding-block: 48px;
+	}
 }
 
 
@@ -1083,7 +1086,9 @@ img {
 		align-items: flex-start;
 		gap: 16px;
 	}
-
+.footer{
+	padding-block: 40px;
+}
 }
 
 @media screen and (max-width: 488px) {}
